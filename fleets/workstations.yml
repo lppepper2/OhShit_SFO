@@ -87,7 +87,7 @@ controls:
   # enable_disk_encryption: true
 
   ###########################################################
-  Managed OS updates
+  #Managed OS updates
 
   # To enable and enforce managed OS updates on macOS/Windows,
   # uncomment `macos_updates` and `windows_updates`.
