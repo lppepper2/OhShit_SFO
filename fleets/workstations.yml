@@ -51,7 +51,7 @@ controls:
   # Note: This requires activating MDM in your Fleet instance.
   #
   # For more, see:
-  #   • https://fleetdm.com/guides/apple-mdm-setup    
+  #   • https://fleetdm.com/guides/apple-mdm-setup
   #   • https://fleetdm.com/guides/windows-mdm-setup
   #   • https://fleetdm.com/docs/configuration/yaml-files#apple-settings-and-windows-settings
   #
@@ -63,12 +63,14 @@ controls:
   # - paths: ../platforms/windows/configuration-profiles/*.xml
   #   labels_include_all:
   #     - "x86-based Windows hosts"
-  # ```  
+  # ```
   ###########################################################
   apple_settings:
     configuration_profiles:
-      - paths: ../platforms/macos/declaration-profiles/*.json
-      - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+      - paths: /Users/andrea/Documents/GitHub/OhShit_SFO/platforms/macos/configuration-profiles
+        labels_include_all:
+          - Department - Engineering
+
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
@@ -85,8 +87,8 @@ controls:
   # enable_disk_encryption: true
 
   ###########################################################
-  # Managed OS updates
-  #
+  Managed OS updates
+
   # To enable and enforce managed OS updates on macOS/Windows,
   # uncomment `macos_updates` and `windows_updates`.
   #
@@ -95,10 +97,10 @@ controls:
   #   • https://fleetdm.com/docs/configuration/yaml-files#windows-updates
   #   • https://fleetdm.com/guides/enforce-os-updates
   ###########################################################
-  # macos_updates:
-  #   deadline: "2030-04-01"
-  #   minimum_version: "26.0"
-  #   update_new_hosts: true
+   macos_updates:
+     deadline: "2026-07-30"
+     minimum_version: "26.4"
+     update_new_hosts: true
   # windows_updates:
   #   deadline_days: 7
   #   grace_period_days: 2
