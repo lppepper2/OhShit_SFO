@@ -12,6 +12,10 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 org_settings:
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/8d327ca5-8e6e-4ad5-aa38-9cd341b0db95
   org_info:
     ###########################################################
     # The name of your organization is displayed to end users
@@ -21,7 +25,7 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: Tanooki
+    org_name: Tanooker
 
   server_settings:
     ###########################################################
@@ -108,12 +112,11 @@ controls:
 
   ###########################################################
   # Uncomment when you are ready to start using Fleet's Windows MDM features.
-  # 
+  #
   # Read more:
   #   • https://fleetdm.com/guides/windows-mdm-setup
   ###########################################################
   # windows_enabled_and_configured: true
-
 
 ###########################################################
 # Labels are static or dynamic groupings of computers for
