@@ -84,7 +84,8 @@ controls:
   # Read more here:
   #   • https://fleetdm.com/guides/enforce-disk-encryption
   ###########################################################
-  # enable_disk_encryption: true
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
 
   ###########################################################
   #Managed OS updates
