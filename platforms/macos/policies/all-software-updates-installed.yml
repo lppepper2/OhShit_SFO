@@ -7,4 +7,4 @@
 
     If you see the message "This feature isn't available with the Apple Account you're currently using." you will need to delete and re-install the app.
   platform: darwin
-  webhooks_and_tickets_enables: true
+  webhooks_and_tickets_enabled: true
